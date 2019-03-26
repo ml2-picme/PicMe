@@ -1,0 +1,1 @@
+This Github Repository contains the results of our ML2 Projekt "PicMe" @ University of Applied Sciences Offenburg.
