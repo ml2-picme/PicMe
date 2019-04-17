@@ -4,10 +4,4 @@ Here some notices:
 - The interesting part of the TensorFlow Model repository: https://github.com/tensorflow/models/tree/master/research/slim
 
 Architecture overview:
-![Architecture](https://raw.githubusercontent.com/ml2-picme/PicMe/master/docs/planning/architecture.jpg)
-
-![Architecture](https://raw.githubusercontent.com/ml2-picme/PicMe/master/docs/planning/architecture.jpg)
-
-![Alt text](/docs/planning/architecture.jpg?raw=true "Optional Title")
-
-![Alt text](docs/planning/architecture.jpg?raw=true "Optional Title")
+![Architecture](docs/planning/architecture.jpg?raw=true "Architecture Overview")
