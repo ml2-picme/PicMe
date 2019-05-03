@@ -1,0 +1,7 @@
+# Don't add new image URLs here, these are less images, for faster test purposes
+# List here some URLs of random images in the Form <URL>;<Class>
+# e.g. https://www.tierpark-sababurg.de/fileadmin/_processed_/7/d/csm__MG_9788_852e2bbcb9.jpg;Bird
+#
+https://www.tierpark-sababurg.de/fileadmin/_processed_/7/d/csm__MG_9788_852e2bbcb9.jpg;Bird
+https://www.genussvoll-dampfen.de/images/product_images/original_images/popcorn.png;Popcorn
+https://updated.de/media/cache/detailspage/cms/2018/02/maus-kaputt-tastatur-steuern.jpg;Keyboard
