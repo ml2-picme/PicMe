@@ -25,21 +25,21 @@ https://www.gartenjournal.net/wp-content/uploads/bachlauf-teich.jpg;Pond
 https://image.brigitte.de/10825142/uncropped-0-0/e2368ac9c6725eda700a2be66b556afd/bO/bauernbrot-backen.jpg;Bread
 http://plazavea.vteximg.com.br/arquivos/ids/178655-1000-1000/315845.jpg;Cola
 https://images.ecosia.org/NAKP5OaLrQvYcRsDaemcvngaEzY=/0x390/smart/http%3A%2F%2Fwww.appliance-world.co.uk%2Fpublic%2Fimages%2Fproducts%2FWMBF742P-1.JPG;Washing Machine
-https://plazavea.vteximg.com.br/arquivos/ids/169635-1000-1000/917245.jpg?v=635769973121000000;Yogurt
+https://plazavea.vteximg.com.br/arquivos/ids/169635-1000-1000/917245.jpg;Yogurt
 http://comprabienprod.s3-website-us-east-1.amazonaws.com/tienda/plazavea/catalogo/electro-mama/seccion/computo/producto/mini-laptop-advance-sp7148-1297/thumb/1600x1599/mini-laptop-advance-sp7148-1297.jpg;Laptop
-https://plazavea.vteximg.com.br/arquivos/ids/170695-1000-1000/15555.jpg?v=635774870311670000;Butter
-https://plazavea.vteximg.com.br/arquivos/ids/169187-1000-1000/4822.jpg?v=635769968499130000;Cheese
+https://plazavea.vteximg.com.br/arquivos/ids/170695-1000-1000/15555.jpg;Butter
+https://plazavea.vteximg.com.br/arquivos/ids/169187-1000-1000/4822.jpg;Cheese
 https://heifer12x12.files.wordpress.com/2012/04/cusquena.jpg;Beer
-http://plazavea.vteximg.com.br/arquivos/ids/179069-1000-1000/20048819.jpg?v=635909127333000000;Bananas
+http://plazavea.vteximg.com.br/arquivos/ids/179069-1000-1000/20048819.jpg;Bananas
 http://4.bp.blogspot.com/-VpnU65syx_k/VPi8uxdeXSI/AAAAAAAAHm0/vpoXp6ErQm0/s1600/bufete1.jpg;Avocados
 https://2.bp.blogspot.com/-J4l96QbWOJo/WNFi4Yt9ZxI/AAAAAAAABtc/EAaqXySKUwk3HRImgf-RasfoUcIw-UoUACLcB/s1600/SFC-275_1sfc.jpg;Sofa Bed
-https://timedotcom.files.wordpress.com/2016/04/hedgehog-animal.jpg?quality=85;Hedgehog
-https://media.istockphoto.com/photos/barquillo-con-helado-de-melon-picture-id889606200;Ice Cream
+https://timedotcom.files.wordpress.com/2016/04/hedgehog-animal.jpg;Hedgehog
+# https://media.istockphoto.com/photos/barquillo-con-helado-de-melon-picture-id889606200;Ice Cream
 https://hoffmanbikes.com/wp-content/uploads/2016/04/Hoffman-Bikes-2016-Imprint-Complete-Bikes-Color-Blue-1.jpg;Bike
 https://http2.mlstatic.com/telefono-celular-para-adultos-mayores-o-ninos-con-boton-sos-D_NQ_NP_129425-MLM25443105364_032017-F.jpg;Cellphone
 http://3.bp.blogspot.com/-acK852ooKBs/TVdUG7aQUgI/AAAAAAAAAMU/PYevVXTaYaY/s1600/Toothbrush%255B1%255D.jpg;Toothbrush
 http://peacefulheartalpacas.com/wp-content/uploads/2011/08/Maximus-May-2011.jpg;Alpaca
-https://avesdelejecafeterodotcom.files.wordpress.com/2016/04/vultur-gryphus.jpg?w=1180;Vulture
+https://avesdelejecafeterodotcom.files.wordpress.com/2016/04/vultur-gryphus.jpg;Vulture
 https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/USS_Liberty_%28AGTR-5%29_underway_in_Chesapeake_Bay_on_29_July_1967_%28K-39927%29.jpg/1200px-USS_Liberty_%28AGTR-5%29_underway_in_Chesapeake_Bay_on_29_July_1967_%28K-39927%29.jpg;Ship
-https://www.healthbenefitstimes.com/9/gallery/pineapple-1/Pineapple-fruit.jpg;pineapple
+# https://www.healthbenefitstimes.com/9/gallery/pineapple-1/Pineapple-fruit.jpg;pineapple
 https://prhome.co.uk/sites/default/files/products/soupbowl.jpg;Soup Bowl
