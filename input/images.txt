@@ -63,3 +63,13 @@ https://video-images.vice.com/articles/5a1d5f7de9cea411d134f032/lede/15173259827
 https://www.fazemag.de/wp-content/uploads/2017/09/Ecstasy-drugs-tablet-632x395.jpg;xtc
 https://cdn.prod-carehubs.net/n1/802899ec472ea3d8/uploads/2015/12/heroin-needle-syringe-drugs-16-x-9.jpg;heroin
 https://en.wiktionary.org/wiki/knife#/media/File:4Messer_fcm.png;knife
+https://media.wired.com/photos/5b86fce8900cb57bbfd1e7ee/master/pass/Jaguar_I-PACE_S_Indus-Silver_065.jpg; car
+https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Sydney-Galaxy-homebush.jpg/333px-Sydney-Galaxy-homebush.jpg; soccer field
+https://www.organicfacts.net/wp-content/uploads/storecarrots.jpg; carrots
+https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/baltimore-pike-crash-1552760100.jpg?crop=1.00xw:0.846xh;0,0.142xh&resize=640:*; car accident
+https://www.gachd.org/wp-content/uploads/2018/07/Children-playing-tug-of-war.jpg; children
+https://www.hamburg-airport.de/images/_85_Vorfeld_Jets_Terminals_MPenner_940.jpg; airport
+https://media-cdn.tripadvisor.com/media/photo-s/12/1f/3b/86/disco-radio-hall.jpg; party crowd
+https://whyy.org/wp-content/uploads/2019/03/Man-Smoking-A-Cigarette-768x512.jpg; smoking cigarette
+https://britishcinematographer.co.uk/wp-content/uploads/bb-plugin/cache/twitter-and-firstlook-onscreen-landscape.jpg; cinema room
+https://www.skiamade.com/website/var/tmp/image-thumbnails/1940000/1944370/thumb__headerImage/sa_sujet_minisweek.jpeg; skiing children
