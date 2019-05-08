@@ -40,7 +40,7 @@ def getWords(synsetId):
 def getWordsBySynsetId(synsetId):
   # GET from image-net using curl
   url = "http://www.image-net.org/api/text/wordnet.synset.getwords?wnid=" + synsetId
-  result = requests.get(url)
+  result = requests.get(url).text
   
   # in case of invalid id we get an 'invalid url' response
   if 'Invalid url!' in result:
@@ -62,7 +62,7 @@ def getParentToChildrenDictionary():
   # GET from image-net using curl
   # response is a list where each item is of format 'parent child'
   #wordnetHierachyList = !curl http://www.image-net.org/archive/wordnet.is_a.txt
-  wordnetHierachyList = requests.get("http://www.image-net.org/archive/wordnet.is_a.txt")
+  wordnetHierachyList = requests.get("http://www.image-net.org/archive/wordnet.is_a.txt").text
 
   # check for invalid url response
   if 'The URL is not valid.' in wordnetHierachyList:
@@ -89,7 +89,7 @@ def getChildToParentsDictionary():
   # GET from image-net using curl
   # response is a list where each item is of format 'parent child'
   #wordnetHierachyList = !curl http://www.image-net.org/archive/wordnet.is_a.txt
-  wordnetHierachyList = requests.get("http://www.image-net.org/archive/wordnet.is_a.txt")
+  wordnetHierachyList = requests.get("http://www.image-net.org/archive/wordnet.is_a.txt").text
 
   # check for invalid url response
   if 'The URL is not valid.' in wordnetHierachyList:
