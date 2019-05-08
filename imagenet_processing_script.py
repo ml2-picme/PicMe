@@ -33,6 +33,8 @@ def getWordsBySynsetId(synsetId):
     url = "http://www.image-net.org/api/text/wordnet.synset.getwords?wnid=" + synsetId
     result = requests.get(url).text.split('\n')
 
+    del result[-1]
+
     # in case of invalid id we get an 'invalid url' response
     if 'Invalid url!' in result:
         result = []
