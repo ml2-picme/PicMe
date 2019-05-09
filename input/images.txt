@@ -34,26 +34,26 @@ http://plazavea.vteximg.com.br/arquivos/ids/179069-1000-1000/20048819.jpg;Banana
 http://4.bp.blogspot.com/-VpnU65syx_k/VPi8uxdeXSI/AAAAAAAAHm0/vpoXp6ErQm0/s1600/bufete1.jpg;Avocados
 https://2.bp.blogspot.com/-J4l96QbWOJo/WNFi4Yt9ZxI/AAAAAAAABtc/EAaqXySKUwk3HRImgf-RasfoUcIw-UoUACLcB/s1600/SFC-275_1sfc.jpg;SofaBed
 https://timedotcom.files.wordpress.com/2016/04/hedgehog-animal.jpg;Hedgehog
-https://en.wikipedia.org/wiki/Ice_cream#/media/File:Ice_Cream_dessert_02.jpg;IceCream
+https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Ice_Cream_dessert_02.jpg/800px-Ice_Cream_dessert_02.jpg;IceCream
 https://hoffmanbikes.com/wp-content/uploads/2016/04/Hoffman-Bikes-2016-Imprint-Complete-Bikes-Color-Blue-1.jpg;Bike
 https://http2.mlstatic.com/telefono-celular-para-adultos-mayores-o-ninos-con-boton-sos-D_NQ_NP_129425-MLM25443105364_032017-F.jpg;Cellphone
 http://3.bp.blogspot.com/-acK852ooKBs/TVdUG7aQUgI/AAAAAAAAAMU/PYevVXTaYaY/s1600/Toothbrush%255B1%255D.jpg;Toothbrush
 http://peacefulheartalpacas.com/wp-content/uploads/2011/08/Maximus-May-2011.jpg;Alpaca
 https://avesdelejecafeterodotcom.files.wordpress.com/2016/04/vultur-gryphus.jpg;Vulture
 https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/USS_Liberty_%28AGTR-5%29_underway_in_Chesapeake_Bay_on_29_July_1967_%28K-39927%29.jpg/1200px-USS_Liberty_%28AGTR-5%29_underway_in_Chesapeake_Bay_on_29_July_1967_%28K-39927%29.jpg;Ship
-https://en.wikipedia.org/wiki/Mk_2_grenade#/media/File:MkII_07.JPG;Grenade
+https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/MkII_07.JPG/800px-MkII_07.JPG;Grenade
 https://prhome.co.uk/sites/default/files/products/soupbowl.jpg;SoupBowl
 https://amp.insider.com/images/5c2cc4c701c0ea1d7e19ff4a-1136-568.jpg;crystal-meth-Methamphetamine
-https://en.wikipedia.org/wiki/Methamphetamine#/media/File:Racemic_methamphetamine.svg;Methamphetamine
-https://en.wikipedia.org/wiki/Cannabis_(drug)#/media/File:Cannabis_Plant.jpg;cannabis
-https://en.wikipedia.org/wiki/Glock#/media/File:GLOCK_17_Gen_4_Pistol_MOD_45160305.jpg;Glock17Gen4
-https://en.wikipedia.org/wiki/Refugee#/media/File:Darfur_refugee_camp_in_Chad.jpg;refugeecamp
-https://en.wikipedia.org/wiki/Bomb#/media/File:B-61_bomb.jpg;bomb
-https://en.wikipedia.org/wiki/Al-Qaeda#/media/File:Flag_of_Jihad.svg;Flag_of_jihad
-https://en.wikipedia.org/wiki/Al-Qaeda#/media/File:Al-Qaida_crée_une_brigade_dirigée_par_des_Touaregs_(8246938011).jpg;Al_Qaida
-https://en.wikipedia.org/wiki/Cocaine#/media/File:Kokain_-_Cocaine.svg;cocaine
-https://en.wikipedia.org/wiki/Cocaine#/media/File:Cocaine_lines_2.jpg;cocaine
-https://en.wikipedia.org/wiki/Pig#/media/File:Wild_Pig_KSC02pd0873.jpg;pig
+https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Racemic_methamphetamine.svg/1920px-Racemic_methamphetamine.svg.png;Methamphetamine
+https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Cannabis_Plant.jpg/800px-Cannabis_Plant.jpg;cannabis
+https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/GLOCK_17_Gen_4_Pistol_MOD_45160305.jpg/1280px-GLOCK_17_Gen_4_Pistol_MOD_45160305.jpg;Glock17Gen4
+https://upload.wikimedia.org/wikipedia/commons/c/c1/Darfur_refugee_camp_in_Chad.jpg;refugeecamp
+https://upload.wikimedia.org/wikipedia/commons/6/6e/B-61_bomb.jpg;bomb
+https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Flag_of_Jihad.svg/1920px-Flag_of_Jihad.svg.png;Flag_of_jihad
+https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Al-Qaida_cr%C3%A9e_une_brigade_dirig%C3%A9e_par_des_Touaregs_%288246938011%29.jpg/800px-Al-Qaida_cr%C3%A9e_une_brigade_dirig%C3%A9e_par_des_Touaregs_%288246938011%29.jpg;Al_Qaida
+https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Kokain_-_Cocaine.svg/1920px-Kokain_-_Cocaine.svg.png;cocaine
+https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Cocaine_lines_2.jpg/1024px-Cocaine_lines_2.jpg;cocaine
+https://upload.wikimedia.org/wikipedia/commons/9/9b/Wild_Pig_KSC02pd0873.jpg;pig
 https://media.npr.org/assets/news/2010/12/20/taliban_wide-8f6162a4db55cd06463bdaabdfc29e49fc0e28a0-s1100-c15.jpg;opium_farm
 https://cdn.pixabay.com/photo/2015/03/08/19/25/bone-664596_960_720.jpg;killing field
 http://www.newnewss.net/wp-content/uploads/2019/04/drug-780x405.jpg;drugs
@@ -62,7 +62,7 @@ https://cdn.vox-cdn.com/thumbor/jMZTN42_q45ArREu6pG6cGZI3sU=/98x0:541x295/920x61
 https://video-images.vice.com/articles/5a1d5f7de9cea411d134f032/lede/1517325982756-LSD-on-tongue.jpeg;lsd
 https://www.fazemag.de/wp-content/uploads/2017/09/Ecstasy-drugs-tablet-632x395.jpg;xtc
 https://cdn.prod-carehubs.net/n1/802899ec472ea3d8/uploads/2015/12/heroin-needle-syringe-drugs-16-x-9.jpg;heroin
-https://en.wiktionary.org/wiki/knife#/media/File:4Messer_fcm.png;knife
+https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/4Messer_fcm.png/150px-4Messer_fcm.png;knife
 https://media.wired.com/photos/5b86fce8900cb57bbfd1e7ee/master/pass/Jaguar_I-PACE_S_Indus-Silver_065.jpg; car
 https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Sydney-Galaxy-homebush.jpg/333px-Sydney-Galaxy-homebush.jpg; soccer field
 https://www.organicfacts.net/wp-content/uploads/storecarrots.jpg; carrots
