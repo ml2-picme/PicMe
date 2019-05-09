@@ -3,7 +3,7 @@
 #
 https://www.tierpark-sababurg.de/fileadmin/_processed_/7/d/csm__MG_9788_852e2bbcb9.jpg;Bird
 https://www.genussvoll-dampfen.de/images/product_images/original_images/popcorn.png;Popcorn
-https://updated.de/media/cache/detailspage/cms/2018/02/maus-kaputt-tastatur-steuern.jpg;Keyboard
+# https://updated.de/media/cache/detailspage/cms/2018/02/maus-kaputt-tastatur-steuern.jpg;Keyboard
 https://images.pickawood.com/data/nettece/aaa-images/customer-images/regal-buecherregal-bibliothek-kiefer-13301-980x720.jpg;Bookshelf
 https://www.adac.de/-/media/images/rechtsberatung/tankstelle-ausruestung-und-wartung-rechtsberatung-926x383.jpg;PetrolStation
 https://www.ingenieur.de/wp-content/uploads/2017/11/2016/17082_E-Traktor-von-John-Deere.jpg;Tractor
