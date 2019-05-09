@@ -55,30 +55,29 @@ https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Kokain_-_Cocaine.svg/1
 https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Cocaine_lines_2.jpg/1024px-Cocaine_lines_2.jpg;cocaine
 https://upload.wikimedia.org/wikipedia/commons/9/9b/Wild_Pig_KSC02pd0873.jpg;pig
 https://media.npr.org/assets/news/2010/12/20/taliban_wide-8f6162a4db55cd06463bdaabdfc29e49fc0e28a0-s1100-c15.jpg;opium_farm
-# https://cdn.pixabay.com/photo/2015/03/08/19/25/bone-664596_960_720.jpg;killing field
+# https://cdn.pixabay.com/photo/2015/03/08/19/25/bone-664596_960_720.jpg;killing_field
 http://www.newnewss.net/wp-content/uploads/2019/04/drug-780x405.jpg;drugs
-natgeo.imgix.net/shows/thumbnails/Drugs,Inc..jpg;drug addict
+natgeo.imgix.net/shows/thumbnails/Drugs,Inc..jpg;drug_addict
 https://cdn.vox-cdn.com/thumbor/jMZTN42_q45ArREu6pG6cGZI3sU=/98x0:541x295/920x613/filters:focal(98x0:541x295):format(webp)/cdn.vox-cdn.com/assets/3388035/acid.png;lsd
 https://video-images.vice.com/articles/5a1d5f7de9cea411d134f032/lede/1517325982756-LSD-on-tongue.jpeg;lsd
 https://www.fazemag.de/wp-content/uploads/2017/09/Ecstasy-drugs-tablet-632x395.jpg;xtc
 https://cdn.prod-carehubs.net/n1/802899ec472ea3d8/uploads/2015/12/heroin-needle-syringe-drugs-16-x-9.jpg;heroin
 https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/4Messer_fcm.png/150px-4Messer_fcm.png;knife
-https://media.wired.com/photos/5b86fce8900cb57bbfd1e7ee/master/pass/Jaguar_I-PACE_S_Indus-Silver_065.jpg; car
-https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Sydney-Galaxy-homebush.jpg/333px-Sydney-Galaxy-homebush.jpg; soccer field
-https://www.organicfacts.net/wp-content/uploads/storecarrots.jpg; carrots
-https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/baltimore-pike-crash-1552760100.jpg?crop=1.00xw:0.846xh;0,0.142xh&resize=640:*; car accident
-https://www.gachd.org/wp-content/uploads/2018/07/Children-playing-tug-of-war.jpg; children
-https://www.hamburg-airport.de/images/_85_Vorfeld_Jets_Terminals_MPenner_940.jpg; airport
-https://media-cdn.tripadvisor.com/media/photo-s/12/1f/3b/86/disco-radio-hall.jpg; party crowd
-https://whyy.org/wp-content/uploads/2019/03/Man-Smoking-A-Cigarette-768x512.jpg; smoking cigarette
-https://britishcinematographer.co.uk/wp-content/uploads/bb-plugin/cache/twitter-and-firstlook-onscreen-landscape.jpg; cinema room
-https://www.skiamade.com/website/var/tmp/image-thumbnails/1940000/1944370/thumb__headerImage/sa_sujet_minisweek.jpeg; skiing children
-https://www.abcboats.com/wp-content/uploads/2016/02/slider.jpg; boat
-https://www.stihlusa.com/webcontent/images/product/525/ms170_act_1001_r1.png; chainsaw
-https://cdn1.medicalnewstoday.com/content/images/articles/322/322200/two-young-women-enjoying-lunch-together.jpg; eating women
-https://www.wilderkaiser.info/feratel/event/large/going-am-wilden-kaiser-bergdoktorerlebniswoche-e-mountainbiketour-bergdoktor-xl-mit-dem-elektrobike-zu-den-drehorten.jpg; bike tour
-https://cdn.networkrail.co.uk/wp-content/uploads/2018/04/New-Measurement-Train-NMT-1035x545.jpg; train
-https://www.meonuk.com/sites/default/files/2017-02/runway%20main%20img.jpg; runway
-https://www.atlantisbahamas.com/media/Things%20To%20Do/Water%20Park/Beaches/Hero/Experiences_Beach.jpg; beach
-https://autoweek.com/sites/default/files/styles/gen-1200-675/public/GSX250R-L8_5D5782.jpg; motorcycle
-
+https://media.wired.com/photos/5b86fce8900cb57bbfd1e7ee/master/pass/Jaguar_I-PACE_S_Indus-Silver_065.jpg;car
+https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Sydney-Galaxy-homebush.jpg/333px-Sydney-Galaxy-homebush.jpg;soccer_field
+https://www.organicfacts.net/wp-content/uploads/storecarrots.jpg;carrots
+https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/baltimore-pike-crash-1552760100.jpg?crop=1.00xw:0.846xh;0,0.142xh&resize=640:*;car_accident
+https://www.gachd.org/wp-content/uploads/2018/07/Children-playing-tug-of-war.jpg;children
+https://www.hamburg-airport.de/images/_85_Vorfeld_Jets_Terminals_MPenner_940.jpg;airport
+https://media-cdn.tripadvisor.com/media/photo-s/12/1f/3b/86/disco-radio-hall.jpg;party_crowd
+https://whyy.org/wp-content/uploads/2019/03/Man-Smoking-A-Cigarette-768x512.jpg;smoking_cigarette
+https://britishcinematographer.co.uk/wp-content/uploads/bb-plugin/cache/twitter-and-firstlook-onscreen-landscape.jpg;cinema_room
+https://www.skiamade.com/website/var/tmp/image-thumbnails/1940000/1944370/thumb__headerImage/sa_sujet_minisweek.jpeg;skiing_children
+https://www.abcboats.com/wp-content/uploads/2016/02/slider.jpg;boat
+https://www.stihlusa.com/webcontent/images/product/525/ms170_act_1001_r1.png;chainsaw
+https://cdn1.medicalnewstoday.com/content/images/articles/322/322200/two-young-women-enjoying-lunch-together.jpg;eating_women
+https://www.wilderkaiser.info/feratel/event/large/going-am-wilden-kaiser-bergdoktorerlebniswoche-e-mountainbiketour-bergdoktor-xl-mit-dem-elektrobike-zu-den-drehorten.jpg;bike_tour
+https://cdn.networkrail.co.uk/wp-content/uploads/2018/04/New-Measurement-Train-NMT-1035x545.jpg;train
+https://www.meonuk.com/sites/default/files/2017-02/runway%20main%20img.jpg;runway
+https://www.atlantisbahamas.com/media/Things%20To%20Do/Water%20Park/Beaches/Hero/Experiences_Beach.jpg;beach
+https://autoweek.com/sites/default/files/styles/gen-1200-675/public/GSX250R-L8_5D5782.jpg;motorcycle
