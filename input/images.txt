@@ -55,7 +55,7 @@ https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Kokain_-_Cocaine.svg/1
 https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Cocaine_lines_2.jpg/1024px-Cocaine_lines_2.jpg;cocaine
 https://upload.wikimedia.org/wikipedia/commons/9/9b/Wild_Pig_KSC02pd0873.jpg;pig
 https://media.npr.org/assets/news/2010/12/20/taliban_wide-8f6162a4db55cd06463bdaabdfc29e49fc0e28a0-s1100-c15.jpg;opium_farm
-https://cdn.pixabay.com/photo/2015/03/08/19/25/bone-664596_960_720.jpg;killing field
+# https://cdn.pixabay.com/photo/2015/03/08/19/25/bone-664596_960_720.jpg;killing field
 http://www.newnewss.net/wp-content/uploads/2019/04/drug-780x405.jpg;drugs
 natgeo.imgix.net/shows/thumbnails/Drugs,Inc..jpg;drug addict
 https://cdn.vox-cdn.com/thumbor/jMZTN42_q45ArREu6pG6cGZI3sU=/98x0:541x295/920x613/filters:focal(98x0:541x295):format(webp)/cdn.vox-cdn.com/assets/3388035/acid.png;lsd
