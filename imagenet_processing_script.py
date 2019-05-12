@@ -43,6 +43,8 @@ def getWordsBySynsetId(synsetId):
   if 'Invalid url!' in result:
     result = []
     
+  del result[-1]
+    
   print('Synset-ID ' + synsetId + ' has words ' + str(result))
   return result
 
@@ -59,13 +61,13 @@ def getParentToChildrenDictionary():
   # GET from image-net using curl
   # response is a list where each item is of format 'parent child'
   wordnetHierachyList = requests.get("http://www.image-net.org/archive/wordnet.is_a.txt").text.split('\n')
-  
-  #remove last object in list (it is empty)
-  del wordnetHierachyList[-1]
 
   # check for invalid url response
   if 'The URL is not valid.' in wordnetHierachyList:
     return {}
+  
+  #remove last object in list (it is empty)
+  del wordnetHierachyList[-1]
   
   # transform list into dictionary
   d = {}
@@ -88,13 +90,13 @@ def getChildToParentsDictionary():
   # GET from image-net using curl
   # response is a list where each item is of format 'parent child'
   wordnetHierachyList = requests.get("http://www.image-net.org/archive/wordnet.is_a.txt").text.split('\n')
-  
-  #remove last object in list (it is empty)
-  del wordnetHierachyList[-1]
 
   # check for invalid url response
   if 'The URL is not valid.' in wordnetHierachyList:
     return {}
+  
+  #remove last object in list (it is empty)
+  del wordnetHierachyList[-1]
 
   # transform list into dictionary
   d = {}
