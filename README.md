@@ -5,3 +5,7 @@ Here some notices:
 
 Architecture overview:
 ![Architecture](docs/planning/architecture.jpg?raw=true "Architecture Overview")
+
+Bing Image Search API:
+https://www.youtube.com/watch?v=T_fs4C0aqD0 (minute 9)
+https://docs.microsoft.com/de-de/azure/cognitive-services/bing-image-search/quickstarts/python
