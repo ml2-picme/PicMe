@@ -1,0 +1,82 @@
+Return-Path: <ml2-sender@web.de>
+Received: from mout.web.de ([212.227.17.11]) by mx-ha.web.de (mxweb111
+ [212.227.17.8]) with ESMTPS (Nemesis) id 1M3kYD-1hWzMb0nwp-000yOf for
+ <ml2-receiver@web.de>; Fri, 31 May 2019 16:11:10 +0200
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=web.de;
+	s=dbaedf251592; t=1559311870;
+	bh=ccn4mTQFYrJlcExtA/Xq4w6wvUTTPr9sG3vhULW4lok=;
+	h=X-UI-Sender-Class:To:From:Subject:Date;
+	b=U02JMvJ4TT1c2oYtLm2jn0Giw9maedK/MFqna+fBBpsq+fyzyr0E44kH6/SG7yz3j
+	 XIEJwTufPp7VNy3VA0clhp9fzpYiy99GrXXek+DEfqohKEQBtbK9lNj+UG9tpugRFY
+	 7qPMHza2jZgmKhBEFq0d8rySExQINKJ8eA+5/jWQ=
+X-UI-Sender-Class: c548c8c5-30a9-4db5-a2e7-cb6cb037b8f9
+Received: from [192.168.2.23] ([79.195.113.232]) by smtp.web.de (mrweb103
+ [213.165.67.124]) with ESMTPSA (Nemesis) id 0MYvxn-1h2CvG3suZ-00VkPQ for
+ <ml2-receiver@web.de>; Fri, 31 May 2019 16:11:10 +0200
+To: ml2-receiver@web.de
+From: ML2 Sender <ml2-sender@web.de>
+Subject: Shopping List - Butter, Cheese and Bananas
+Message-ID: <749e9f60-a4d7-7dd2-83c9-144b1c6a5edb@web.de>
+Date: Fri, 31 May 2019 16:11:11 +0200
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:60.0) Gecko/20100101
+ Thunderbird/60.7.0
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Provags-ID: V03:K1:4uPq2ju7HZwJ8+pBxZ7x6h/n7v9806yDnC2Jg3JUhRdnualbgm7
+ 3yWjOODf5AsaEbcC0GCQ/lY0QNDKqGgU+Gs01KROOuu6gkdi1KxBh+zDuiWKusIrSiR/lOu
+ qxVRkF9crzPElEtchzYJRY5kIzsmseLVhZdc3K39kNdcuv8h4zDrKRQnCyJrEbmof/7KJaK
+ cskrOnQ5WlAJ6H/Fk5ZJw==
+X-Spam-Flag: NO
+X-UI-Out-Filterresults: notjunk:1;V03:K0:rgrC3gs9mMw=:X2gshPs3zj1klW26OeyN2m
+ CAW8EGosZpqQ0acKfz4haJgQa5fsh/SrEQR5Yce+DYALUkdKGY4nNNWBNVGeWGRZ4iYVao7TQ
+ CUkWPMLLHXdcDKXbV/qRUsILjJMgE+mVuPwohIUZx+3Lv697p06gEF7NXRWaNR91kNNTsfPGI
+ K7dDsfqtNEHnv1U/sc5iLRWdKEVRD4GaztdQFqC0ilAOmc1Bu+X9jsYUpfu9ofjzMTlxcXdCk
+ i5AefMD2NSpOz36D+vmzC+CSWnBr1gmXq1XV7chgd2YjTD7BmcpE9RJ6Roh2Cj+z9rclg9mG6
+ xoO81OZ+3jtUzbK2MFM+5c7kk7coAD54HzfYOkOLvnkB+RTWzpihizq4PRkwIOQkIOluNHL1q
+ IXPquH8kF9YMWbWugDOdY2pNEiYQL0dUVYmuYbg+xlWixCend0KQjYVh8OmKkZsyzFDT2RZAB
+ Ku/JWxNE3DR77IM21HpdfPkT25tG8x391ojdsDdDCmQolydfN+qwEDoZsWpF0B+dw337tph8o
+ eKIXkWFv5/TB4eg37mWP2Ar7OW2282U6sp56SZd8fOxjXA/6xbuNa5+vFl0mHfIqoxBDon22G
+ +hkfUGw/Ee81MIsmPXjPasX5l+8tNn1FMfABy7eT6rtG5JU2Yy1kqBcjvDvWfkZmlCbqptj/h
+ Slyq1R6xHLShJV72Ee+8ccNjRrwVzehgN9Y7BSJmEtgX5Oscf0rlOyHf7fQ+elkKij7L4C1XJ
+ KQN6Ow3WxHBGCcsxtpy19D4RyhEi/V0VK7cmOv0dT8QkKVkiRK+qtnljHq+T3T31ee+44cVQ5
+ SU0C9jtrukfzFbZTzfGCmRm24Vk804h9dgoAzNDGH13T5lm9EWH8ocsvyaTYWdZrHei0s+vpW
+ UZr6Juu57LkZFSWPqgQgBFKUIABAhcECCEjh9wyjMEohCujS8v3kmnSxBQnQ3Y0uKhotFs85K
+ aQ5hEXDB1mToa5dA8Qr1bqUCYno4sn2ib9r49woYqruNKZZBAzH6E
+Envelope-To: <ml2-receiver@web.de>
+X-UI-Filterresults: unknown:5;V03:K0:mlAm0CFGHBE=:w0mgNgiKYe7pqds2SAosuQ5wsY
+ 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
+ h2WrJxiTAMSJOjxX8p+xM8nFD3LgmU=
+
+Hi,
+
+please don't forget to buy the things. Thank you :-)
+
+Regards
+
