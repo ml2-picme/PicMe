@@ -1,1 +1,3 @@
 // Hier kommen die URLs zu den Mails rein
+https://raw.githubusercontent.com/ml2-picme/PicMe/master/input/Test%20Mail.eml
+https://raw.githubusercontent.com/ml2-picme/PicMe/master/input/Shopping%20List%20-%20Butter%2C%20Cheese%20and%20Bananas.eml
