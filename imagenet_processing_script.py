@@ -7,6 +7,7 @@ Original file is located at
     https://colab.research.google.com/github/ml2-picme/PicMe/blob/master/imagenet_processing.ipynb
 """
 
+# author: tai.truong@software-developer.org. @see https://github.com/ml2-picme/PicMe, imagenet_processing_script.py
 import requests
 
 # returns a words list, including parent and children words for a given synset-ID
