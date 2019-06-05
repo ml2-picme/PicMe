@@ -36,7 +36,7 @@ def classifyImages(preparedImages, function_preprocessInput, function_decodePred
 # ======================== Methods for printing the classification results ========================
 
 # Show the classification results in a good, readable format (prints the predications based on their model and accuracy
-def compareResults(fileNames, resulsList, modelList, threshold, images):
+def compareResults(fileNames, resultsList, modelList, threshold, images):
   for i in range(len(fileNames)):
     print("Comparing the Results for File: " + fileNames[i])
     plt.figure()
@@ -65,7 +65,7 @@ def compareResults(fileNames, resulsList, modelList, threshold, images):
 # Top3;prediction3picture1;prediction3picture2;...
 # Top4;prediction4picture1;prediction4picture2;...
 # Top5;prediction5picture1;prediction5picture2;...
-def generateCsvForModelComparison(fileNames, resulsList, modelList, filesDict):
+def generateCsvForModelComparison(fileNames, resultsList, modelList, filesDict):
   allModelCSVs = []
   # ===== Generate the Header rows =====
   # Walk through the different models
