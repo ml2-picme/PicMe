@@ -65,7 +65,7 @@ def compareResults(fileNames, resultsList, modelList, threshold, images):
 # Top3;prediction3picture1;prediction3picture2;...
 # Top4;prediction4picture1;prediction4picture2;...
 # Top5;prediction5picture1;prediction5picture2;...
-def generateCsvForModelComparison(fileNames, resultsList, modelList, filesDict):
+def generateCsvForModelComparison(fileNames, resultsList, modelList, filesDict, function_getFileNameFromPath):
   allModelCSVs = []
   # ===== Generate the Header rows =====
   # Walk through the different models
@@ -78,7 +78,7 @@ def generateCsvForModelComparison(fileNames, resultsList, modelList, filesDict):
 	# Second row: Model name + File names
     modelCSV += modelList[k]
     for i in range(len(fileNames)):
-      modelCSV += ";" + getFileNameFromPath(fileNames[i])  
+      modelCSV += ";" + function_getFileNameFromPath(fileNames[i])  
     modelCSV += "\n"
     # ===== Generate the content rows containing the results ======
     for j in range(5):
