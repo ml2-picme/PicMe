@@ -27,14 +27,14 @@ def storeImageClassificationResultToDB(connection, localPath, model, predictedCl
   cursor.close()
 
 # Query the database for a specific search word
-def querySearchWordAndPrintResults(connection, searchWord):
+def querySearchWordAndPrintResults(connection, searchWord, function_prepareImagesForClassification):
   cursor = connection.cursor()
   query = ("select distinct local_path, prediction_class from results where prediction_class = %s")
   cursor.execute(query, (searchWord,))
   
   for (local_path, prediction_class) in cursor:
     foundFiles = [open(local_path, 'rb')]
-    preparedImage224x224 = prepareImagesForClassification(foundFiles, 224, 224)[0]
+    preparedImage224x224 = function_prepareImagesForClassification(foundFiles, 224, 224)[0]
     plt.figure()
     plt.imshow(preparedImage224x224)
     plt.title("{}".format(local_path))
