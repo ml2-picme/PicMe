@@ -9,3 +9,7 @@ Architecture overview:
 Bing Image Search API:
 https://www.youtube.com/watch?v=T_fs4C0aqD0 (minute 9)
 https://docs.microsoft.com/de-de/azure/cognitive-services/bing-image-search/quickstarts/python
+
+Alternative to Bing Image Search API:
+https://www.quora.com/What-is-the-best-alternative-to-Microsoft-Bing-Image-Search-API
+https://rapidapi.com/contextualwebsearch/api/web-search?endpoint=5b864ca4e4b085e3f407ecca
