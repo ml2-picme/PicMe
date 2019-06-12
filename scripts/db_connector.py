@@ -61,7 +61,7 @@ def queryImagesByTermAndPrintResults(connection, searchWord, function_prepareIma
   cursor.close()
 
 # Query the stemming table for a specific search word
-def queryStemmingsByTermAndPrintResults(connection, searchWord, function_prepareImagesForClassification):
+def queryStemmingsByTermAndPrintResults(connection, searchWord):
   cursor = connection.cursor()
   query = ("select email_path, email_from, email_to, email_subject, email_body from email_list, email_stemming where email_list.ID = email_stemming.emailID and email_stemming.stemming_word = %s")
   cursor.execute(query, (searchWord,))
