@@ -18,6 +18,27 @@ def storeImageClassificationResultToDB(connection, localPath, model, predictedCl
   connection.commit()
   print(resultId, " | ", localPath, " | ", model, " | ", predictedClass, " | ", predictionProbability)
   cursor.close()
+  
+# Method for writing the stemming results to DB
+def storeTextStemmingResultToDB(connection, emailPath, emailFrom, emailTo, emailSubject, emailBody, stemmingWords):
+  cursor = connection.cursor()
+  add_email = ("insert ignore into email_list (email_path, email_from, email_to, email_subject, email_body) values (%s, %s, %s, %s, %s)")
+  data_email = (emailPath, emailFrom, emailTo, emailSubject, emailBody)
+  cursor.execute(add_email, data_email)
+  resultId = cursor.lastrowid
+  connection.commit()
+  print(resultId, " | ", emailPath, " | ", emailFrom, " | ", emailTo, " | ", emailSubject, "|", emailBody)
+  
+  if(resultId != 0):
+    for stemmingWord in stemmingWords:
+      add_stemming = ("insert ignore into email_stemming (emailID, stemming_word) values (%s, %s)")
+      data_stemming = (int(resultId), stemmingWord)
+      cursor.execute(add_stemming, data_stemming)
+      resultId2 = cursor.lastrowid
+      connection.commit()
+      print(resultId2, " | ", stemmingWord)
+  
+  cursor.close()
 
 # Query the database for a specific search word
 def querySearchWordAndPrintResults(connection, searchWord, function_prepareImagesForClassification):
