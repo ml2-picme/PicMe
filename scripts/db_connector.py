@@ -41,10 +41,12 @@ def storeTextStemmingResultToDB(connection, emailPath, emailFrom, emailTo, email
   cursor.close()
 
 # Query the database for a specific search word
-def querySearchWordAndPrintResults(connection, searchWord, function_prepareImagesForClassification):
+def queryImagesByTermAndPrintResults(connection, searchWord, function_prepareImagesForClassification):
   cursor = connection.cursor()
   query = ("select distinct local_path, prediction_class from results where prediction_class = %s")
   cursor.execute(query, (searchWord,))
+  
+  print("Found following images for search term \"" + searchWord + "\"")
   
   for (local_path, prediction_class) in cursor:
     foundFiles = [open(local_path, 'rb')]
