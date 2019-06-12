@@ -12,6 +12,7 @@ def prepare():
   nltk.download('porter_test')
   # get all english stop words like 'the', 'is', 'are', 'over'
   stopWords = nltk.corpus.stopwords.words('english')
+  return stopWords
   
 # Example call
 def example():
@@ -29,7 +30,7 @@ def example():
   print('match: ', matchTextWithSearchTerms(input, searchTermList))
   
 # returns a list of normalized words
-def normalizeWords(input):
+def normalizeWords(input, stopWords):
   # source: https://www.kdnuggets.com/2018/03/simple-text-classifier-google-colaboratory.html
   # replace all non-letters to whitespace. Example: hello#!world => hello  world
   input = re.sub('[^a-zA-Z]', ' ',  str(input))
