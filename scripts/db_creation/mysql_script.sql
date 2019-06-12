@@ -15,5 +15,6 @@ CREATE TABLE email_stemming (
     ID int PRIMARY KEY AUTO_INCREMENT,
     emailID int NOT NULL,
     stemming_word varchar(100) NOT NULL,
-    FOREIGN KEY (emailID) REFERENCES email_list(ID)
+    FOREIGN KEY (emailID) REFERENCES email_list(ID),
+    CONSTRAINT c_unique_stemming UNIQUE (emailID, stemming_word)
 );
