@@ -4,14 +4,7 @@
 import mysql.connector
 import matplotlib.pyplot as plt
 
-# Connection parameters
-dbUser = "ml2"
-dbPassword = "ml2@hsOg#2019!"
-dbHost = "192.52.33.218"
-dbDatabase = "ml2"
-dbAutoCommit = True
-
-def createConnection():
+def createConnection(dbUser, dbPassword, dbHost, dbDatabase, dbAutoCommit):
   connection = mysql.connector.connect(user=dbUser, password=dbPassword, host=dbHost, database=dbDatabase, autocommit=dbAutoCommit)
   return connection
 
