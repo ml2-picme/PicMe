@@ -143,7 +143,6 @@ def examineImages(path, imageExtensions, dbConnection):
 
 def examineEmails(path, emailExtensions, dbConnection):
   
-  emailsDict = {}
   stemmingStopWords = text_processing.prepare()
   
   # Step 1: Search the directory based on file extensions
@@ -156,10 +155,10 @@ def examineEmails(path, emailExtensions, dbConnection):
     emailDict = email_processing.examineEmail(email)
     
     emailPath = str(email)
-    emailFrom = emailDict["from"]
-    emailTo = emailDict["to"]
-    emailSubject = emailDict["subject"]
-    emailBody = emailDict["body"]
+    emailFrom = str(emailDict["from"])
+    emailTo = str(emailDict["to"])
+    emailSubject = str(emailDict["subject"])
+    emailBody = str(emailDict["body"])
     
     # b) Prepare for stemming
     normalizedSubject = text_processing.normalizeWords(emailSubject, stemmingStopWords)
