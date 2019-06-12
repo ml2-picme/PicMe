@@ -14,27 +14,6 @@ import email_processing
 def createDbConnection(dbUser, dbPassword, dbHost, dbDatabase, dbAutoCommit):
   return db_connector.createConnection(dbUser, dbPassword, dbHost, dbDatabase, dbAutoCommit)
 
-# This is the entry method for directory preparation. It downloads the files from ./input directory into local directories on colab instance
-def simulateDirectoryStructure(path, hashrange):
-  createDirectoryStructure(path, hashrange)
-  downloadPictures(path, hashrange)
-  downloadEmails(path, hashrange)
-
-# This is the entry method for examining the local directory structure. It looks for images, emails and documents and writes results to DB
-def examineDirectoryStructure(path, imageExtensions, emailExtensions, documentExtensions, dbConnection):
-  examineImages(path, imageExtensions, dbConnection)
-  examineEmails(path, emailExtensions, dbConnection)
-
-# This is the entry method for finding results based on a fix search-term
-def searchByTerm(searchTerm, dbConnection):
-  searchTheDbBasedOnTerm(searchTerm, dbConnection)
-
-# This is the entry method for automatically finding image-text mappings
-def searchImageTextMappings(dbConnection):
-  searchDbAutomaticallyForImageTextMappings(dbConnection)
-
-"""### Method definitions"""
-
 def createDirectoryStructure(path, hashrange):
   # Step 1: Delete local files, if existing
   file_processing.deleteLocalDirectory(path)
