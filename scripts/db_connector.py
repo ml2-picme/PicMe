@@ -40,7 +40,7 @@ def storeTextStemmingResultToDB(connection, emailPath, emailFrom, emailTo, email
   
   cursor.close()
 
-# Query the database for a specific search word
+# Query the image table for a specific search word
 def queryImagesByTermAndPrintResults(connection, searchWord, function_prepareImagesForClassification):
   cursor = connection.cursor()
   query = ("select distinct local_path, prediction_class from results where prediction_class = %s")
@@ -58,4 +58,22 @@ def queryImagesByTermAndPrintResults(connection, searchWord, function_prepareIma
     plt.show()
     plt.clf()
 
+  cursor.close()
+
+# Query the stemming table for a specific search word
+def queryStemmingsByTermAndPrintResults(connection, searchWord, function_prepareImagesForClassification):
+  cursor = connection.cursor()
+  query = ("select email_path, email_from, email_to, email_subject, email_body from email_list, email_stemming where email_list.ID = email_stemming.emailID and email_stemming.stemming_word = %s")
+  cursor.execute(query, (searchWord,))
+  
+  print("Found following emails for search term \"" + searchWord + "\"")
+  
+  for (emailPath, emailFrom, emailTo, emailSubject, emailBody) in cursor:
+    print("File:   ", emailPath)
+    print("From:   ", emailFrom)
+    print("To:     ", emailTo)
+    print("Subject:", emailSubject)
+    print("Body:   ", emailBody)
+    print("====================")
+    
   cursor.close()
