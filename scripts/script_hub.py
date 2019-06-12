@@ -176,8 +176,7 @@ def examineEmails(path, emailExtensions, dbConnection):
     db_connector.storeTextStemmingResultToDB(dbConnection, emailPath, emailFrom, emailTo, emailSubject, emailBody, stemmingWords)
 
 def searchTheDbBasedOnTerm(searchTerm, dbConnection):
-  resultCursor = db_connector.querySearchWordAndPrintResults(dbConnection, searchTerm, image_classification.prepareImagesForClassification)
-  return resultCursor
+  db_connector.querySearchWordAndPrintResults(dbConnection, searchTerm, image_classification.prepareImagesForClassification)
   
 def searchDbAutomaticallyForImageTextMappings(dbConnection):
   print("todo")
