@@ -155,7 +155,7 @@ def examineEmails(path, emailExtensions, dbConnection):
     # a) Examine email content
     emailDict = email_processing.examineEmail(email)
     
-    emailPath = email
+    emailPath = str(email)
     emailFrom = emailDict["from"]
     emailTo = emailDict["to"]
     emailSubject = emailDict["subject"]
