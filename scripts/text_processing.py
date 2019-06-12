@@ -16,9 +16,10 @@ def prepare():
   
 # Example call
 def example():
+  stopWords = prepare()
   input = 'the quick brown foxes 123 jumped ❤☀ over äääßßß the lAzy Dog!'
   print('input:', input)
-  normalized = normalizeWords(input)
+  normalized = normalizeWords(input, stopWords)
   print('normalized: ', normalized)
   stemmed = stem(normalized)
   print('stemmed: ', stemmed)
