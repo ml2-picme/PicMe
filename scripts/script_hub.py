@@ -147,13 +147,13 @@ def examineEmails(path, emailExtensions, dbConnection):
   stemmingStopWords = text_processing.prepare()
   
   # Step 1: Search the directory based on file extensions
-  emailList = file_processing.findFilesInPathByFileExtension(localEmailPath, extensionsToCheck)
+  emailList = file_processing.findFilesInPathByFileExtension(path, emailExtensions)
   
   # Step 2: Iterate the Emails and examine their content
   for email in emailList:
     
     # a) Examine email content
-    emailDict = examineEmail(email)
+    emailDict = email_processing.examineEmail(email)
     
     emailPath = email
     emailFrom = emailDict["from"]
@@ -174,7 +174,7 @@ def examineEmails(path, emailExtensions, dbConnection):
     stemmingWords.extend(stemmedBody)
     
     # c) Store the results into DB
-    storeTextStemmingResultToDB(dbConnection, emailPath, emailFrom, emailTo, emailSubject, emailBody, stemmingWords)
+    db_connector.storeTextStemmingResultToDB(dbConnection, emailPath, emailFrom, emailTo, emailSubject, emailBody, stemmingWords)
 
 def searchTheDbBasedOnTerm(searchTerm, dbConnection):
   resultCursor = db_connector.querySearchWordAndPrintResults(dbConnection, searchTerm, image_classification.prepareImagesForClassification)
