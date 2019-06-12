@@ -177,6 +177,7 @@ def examineEmails(path, emailExtensions, dbConnection):
 
 def searchTheDbBasedOnTerm(searchTerm, dbConnection):
   resultCursor = db_connector.querySearchWordAndPrintResults(dbConnection, searchTerm, image_classification.prepareImagesForClassification)
-
+  return resultCursor
+  
 def searchDbAutomaticallyForImageTextMappings(dbConnection):
   print("todo")
