@@ -168,7 +168,7 @@ def examineEmails(path, emailExtensions, dbConnection):
   stemmingStopWords = text_processing.prepare()
   
   # Step 1: Search the directory based on file extensions
-  emailList = file_processing.findFilesInPath(localEmailPath, extensionsToCheck)
+  emailList = file_processing.findFilesInPathByFileExtension(localEmailPath, extensionsToCheck)
   
   # Step 2: Iterate the Emails and examine their content
   for email in emailList:
