@@ -1,5 +1,7 @@
 DROP TABLE email_list;
 DROP TABLE email_stemming;
+DROP TABLE results;
+DROP TABLE image_results;
 
 CREATE TABLE email_list (
     ID int PRIMARY KEY AUTO_INCREMENT,
@@ -17,4 +19,12 @@ CREATE TABLE email_stemming (
     stemming_word varchar(100) NOT NULL,
     FOREIGN KEY (emailID) REFERENCES email_list(ID),
     CONSTRAINT c_unique_stemming UNIQUE (emailID, stemming_word)
+);
+
+CREATE TABLE image_results(
+    local_path varchar(250) NOT NULL,
+    model varchar(100) NOT NULL,
+    prediction_class varchar(100) NOT NULL,
+    prediction_probability float NOT NULL
+    PRIMARY KEY(local_path,model,prediction_class,prediction_probability)
 );
