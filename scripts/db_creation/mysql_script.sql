@@ -1,6 +1,5 @@
 DROP TABLE email_list;
 DROP TABLE email_stemming;
-DROP TABLE results;
 DROP TABLE image_results;
 
 CREATE TABLE email_list (
@@ -25,6 +24,7 @@ CREATE TABLE image_results(
     local_path varchar(250) NOT NULL,
     model varchar(100) NOT NULL,
     prediction_class varchar(100) NOT NULL,
-    prediction_probability float NOT NULL
+    prediction_class_stemmed varchar(100) NOT NULL,
+    prediction_probability float NOT NULL,
     PRIMARY KEY(local_path,model,prediction_class,prediction_probability)
 );
