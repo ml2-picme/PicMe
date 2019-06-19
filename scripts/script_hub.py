@@ -185,7 +185,11 @@ def searchImagesBasedOnTerm(searchTerm, dbConnection):
   db_connector.queryImagesByTermAndPrintResults(dbConnection, searchTerm, image_classification.prepareImagesForClassification)
 
 def searchEmailsBasedOnTerm(searchTerm, dbConnection):
-  db_connector.queryStemmingsByTermAndPrintResults(dbConnection, searchTerm)
+  # Emails are stemmed, so stem also the search term, to match the stemming list!
+  stemmingStopWords = text_processing.prepare()
+  normalizedSearchTerm = text_processing.normalizeWords(searchTerm, stemmingStopWords)
+  stemmedSearchTerm = text_processing.stem(normalizedSearchTerm)
+  db_connector.queryStemmingsByTermAndPrintResults(dbConnection, stemmedSearchTerm)
 
 def searchDbAutomaticallyForImageTextMappings(dbConnection):
   print("todo")
