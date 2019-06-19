@@ -79,7 +79,7 @@ def queryStemmingsByTermAndPrintResults(connection, searchWord):
   cursor.close()
   
 # Query to find image-text matchings automatically
-def queryImagesAndMailsForSameStemmingWords(connection):
+def queryImagesAndMailsForSameStemmingWords(connection, function_prepareImagesForClassification):
   cursor = connection.cursor()
   query = ("select distinct image_results.prediction_class, image_results.prediction_class_stemmed, image_results.local_path, email_list.email_from, email_list.email_to, email_list.email_subject, email_list.email_body from image_results, email_list, email_stemming where email_stemming.emailID = email_list.ID and email_stemming.stemming_word = image_results.prediction_class_stemmed")
   cursor.execute(query)
@@ -98,7 +98,7 @@ def queryImagesAndMailsForSameStemmingWords(connection):
     preparedImage224x224 = function_prepareImagesForClassification(localFile, 224, 224)[0]
     plt.figure()
     plt.imshow(preparedImage224x224)
-    plt.title("{}".format(local_path))
+    plt.title("{}".format(imagePath))
     plt.axis('off')
     plt.show()
     plt.clf()
