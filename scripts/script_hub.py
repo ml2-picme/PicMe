@@ -192,4 +192,4 @@ def searchEmailsBasedOnTerm(searchTerm, dbConnection):
   db_connector.queryStemmingsByTermAndPrintResults(dbConnection, stemmedSearchTerm)
 
 def searchDbAutomaticallyForImageTextMappings(dbConnection):
-  db_connector.queryImagesAndMailsForSameStemmingWords(dbConnection)
+  db_connector.queryImagesAndMailsForSameStemmingWords(dbConnection, image_classification.prepareImagesForClassification)
