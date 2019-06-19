@@ -192,4 +192,4 @@ def searchEmailsBasedOnTerm(searchTerm, dbConnection):
   db_connector.queryStemmingsByTermAndPrintResults(dbConnection, stemmedSearchTerm)
 
 def searchDbAutomaticallyForImageTextMappings(dbConnection):
-  print("todo")
+  db_connector.queryImagesAndMailsForSameStemmingWords(dbConnection)
