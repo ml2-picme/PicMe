@@ -77,3 +77,32 @@ def queryStemmingsByTermAndPrintResults(connection, searchWord):
     print("====================")
     
   cursor.close()
+  
+# Query to find image-text matchings automatically
+def queryImagesAndMailsForSameStemmingWords(connection):
+  cursor = connection.cursor()
+  query = ("select distinct image_results.prediction_class, image_results.prediction_class_stemmed, image_results.local_path, email_list.email_from, email_list.email_to, email_list.email_subject, email_list.email_body from image_results, email_list, email_stemming where email_stemming.emailID = email_list.ID and email_stemming.stemming_word = image_results.prediction_class_stemmed")
+  cursor.execute(query)
+  print("Found following matches")
+  
+  for (imagePredictionClass, stemmedClass, imagePath, emailFrom, emailTo, emailSubject, emailBody) in cursor:
+    # Show mail info
+    print("Das Stemming-Wort", stemmedClass, "(abgeleitet vom Wort", imagePredictionClass, ") matcht für folgende Image / Mail Kombination:")
+    print("* From:     ", emailFrom)
+    print("* To:       ", emailTo)
+    print("* Subject:  ", emailSubject)
+    print("* Body:     ", emailBody)
+    
+    # Show image
+    localFile = [open(imagePath, 'rb')]
+    preparedImage224x224 = function_prepareImagesForClassification(localFile, 224, 224)[0]
+    plt.figure()
+    plt.imshow(preparedImage224x224)
+    plt.title("{}".format(local_path))
+    plt.axis('off')
+    plt.show()
+    plt.clf()
+    
+    print("====================")
+  
+  cursor.close()
