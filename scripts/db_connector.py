@@ -9,14 +9,14 @@ def createConnection(dbUser, dbPassword, dbHost, dbDatabase, dbAutoCommit):
   return connection
 
 # Method for writing the image classification results to DB
-def storeImageClassificationResultToDB(connection, localPath, model, predictedClass, predictionProbability):
+def storeImageClassificationResultToDB(connection, localPath, model, predictedClass, predictedClassStemmed, predictionProbability):
   cursor = connection.cursor()
-  add_result = ("insert ignore into image_results (local_path, model, prediction_class, prediction_probability) values (%s, %s, %s, %s)")
-  data_result = (localPath, model, predictedClass, float(predictionProbability))
+  add_result = ("insert ignore into image_results (local_path, model, prediction_class, prediction_class_stemmed, prediction_probability) values (%s, %s, %s, %s, %s)")
+  data_result = (localPath, model, predictedClass, predictedClassStemmed, float(predictionProbability))
   cursor.execute(add_result, data_result)
   resultId = cursor.lastrowid
   connection.commit()
-  print(resultId, " | ", localPath, " | ", model, " | ", predictedClass, " | ", predictionProbability)
+  print(resultId, " | ", localPath, " | ", model, " | ", predictedClass, " | ", predictedClassStemmed, " | ", predictionProbability)
   cursor.close()
   
 # Method for writing the stemming results to DB
