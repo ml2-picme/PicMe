@@ -188,7 +188,7 @@ def searchEmailsBasedOnTerm(searchTerm, dbConnection):
   # Emails are stemmed, so stem also the search term, to match the stemming list!
   stemmingStopWords = text_processing.prepare()
   normalizedSearchTerm = text_processing.normalizeWords(searchTerm, stemmingStopWords)
-  stemmedSearchTerm = text_processing.stem(normalizedSearchTerm)
+  stemmedSearchTerm = text_processing.stem(normalizedSearchTerm)[0]
   db_connector.queryStemmingsByTermAndPrintResults(dbConnection, stemmedSearchTerm)
 
 def searchDbAutomaticallyForImageTextMappings(dbConnection):
