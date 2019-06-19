@@ -11,7 +11,7 @@ def createConnection(dbUser, dbPassword, dbHost, dbDatabase, dbAutoCommit):
 # Method for writing the image classification results to DB
 def storeImageClassificationResultToDB(connection, localPath, model, predictedClass, predictionProbability):
   cursor = connection.cursor()
-  add_result = ("insert ignore into results (local_path, model, prediction_class, prediction_probability) values (%s, %s, %s, %s)")
+  add_result = ("insert ignore into image_results (local_path, model, prediction_class, prediction_probability) values (%s, %s, %s, %s)")
   data_result = (localPath, model, predictedClass, float(predictionProbability))
   cursor.execute(add_result, data_result)
   resultId = cursor.lastrowid
@@ -43,7 +43,7 @@ def storeTextStemmingResultToDB(connection, emailPath, emailFrom, emailTo, email
 # Query the image table for a specific search word
 def queryImagesByTermAndPrintResults(connection, searchWord, function_prepareImagesForClassification):
   cursor = connection.cursor()
-  query = ("select distinct local_path, prediction_class from results where prediction_class = %s")
+  query = ("select distinct local_path, prediction_class from image_results where prediction_class = %s")
   cursor.execute(query, (searchWord,))
   
   print("Found following images for search term \"" + searchWord + "\"")
