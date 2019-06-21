@@ -135,8 +135,8 @@ def examineImages(path, imageExtensions, dbConnection):
 
           # a) Store the original class to DB
           normalizedPredictedClass = text_processing.normalizeWords(predictedClass, stemmingStopWords)
-          stemmedPredictedClass = text_processing.stem(normalizedPredictedClass)[0]
-          db_connector.storeImageClassificationResultToDB(dbConnection, fileName, modelName, predictedClass, stemmedPredictedClass, predictedProbability)
+          stemmedPredictedClass = text_processing.stem(normalizedPredictedClass)
+          db_connector.storeImageClassificationResultToDB(dbConnection, fileName, modelName, predictedClass, predictedProbability, stemmedPredictedClass)
 
           # b) Expand ImageNet classes by ImageNet tree search
           newWords = imagenet_tree_search.getWords(predictedClassSynsetId, parentToChildrenDictionary, childToParentsDictionary)
@@ -144,8 +144,8 @@ def examineImages(path, imageExtensions, dbConnection):
           # c) Also save these new results to DB
           for newWord in newWords:
             normalizedPredictedClass = text_processing.normalizeWords(newWord, stemmingStopWords)
-            stemmedPredictedClass = text_processing.stem(normalizedPredictedClass)[0]
-            db_connector.storeImageClassificationResultToDB(dbConnection, fileName, modelName, newWord, stemmedPredictedClass, predictedProbability)
+            stemmedPredictedClass = text_processing.stem(normalizedPredictedClass)
+            db_connector.storeImageClassificationResultToDB(dbConnection, fileName, modelName, newWord, predictedProbability, stemmedPredictedClass)
 
 def examineEmails(path, emailExtensions, dbConnection):
   
