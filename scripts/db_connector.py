@@ -9,14 +9,23 @@ def createConnection(dbUser, dbPassword, dbHost, dbDatabase, dbAutoCommit):
   return connection
 
 # Method for writing the image classification results to DB
-def storeImageClassificationResultToDB(connection, localPath, model, predictedClass, predictedClassStemmed, predictionProbability):
+def storeImageClassificationResultToDB(connection, localPath, model, predictedClass, predictionProbability, stemmingWords):
   cursor = connection.cursor()
-  add_result = ("insert ignore into image_results (local_path, model, prediction_class, prediction_class_stemmed, prediction_probability) values (%s, %s, %s, %s, %s)")
-  data_result = (localPath, model, predictedClass, predictedClassStemmed, float(predictionProbability))
+  add_result = ("insert ignore into image_list (local_path, model, prediction_class, prediction_probability) values (%s, %s, %s, %s)")
+  data_result = (localPath, model, predictedClass, float(predictionProbability))
   cursor.execute(add_result, data_result)
   resultId = cursor.lastrowid
   connection.commit()
-  print(resultId, " | ", localPath, " | ", model, " | ", predictedClass, " | ", predictedClassStemmed, " | ", predictionProbability)
+  print(resultId, " | ", localPath, " | ", model, " | ", predictedClass, " | ", predictionProbability)
+  
+  if(resultId != 0):
+    for stemmingWord in stemmingWords:
+      add_stemming = ("insert ignore into image_stemming (imageID, stemming_word) values (%s, %s)")
+      data_stemming = (int(resultId), stemmingWord)
+      resultId2 = cursor.lastrowid
+      connection.commit()
+      print(resultId2, " | ", stemmingWord)
+  
   cursor.close()
   
 # Method for writing the stemming results to DB
@@ -43,7 +52,7 @@ def storeTextStemmingResultToDB(connection, emailPath, emailFrom, emailTo, email
 # Query the image table for a specific search word
 def queryImagesByTermAndPrintResults(connection, searchWord, function_prepareImagesForClassification):
   cursor = connection.cursor()
-  query = ("select distinct local_path, prediction_class from image_results where prediction_class = %s")
+  query = ("select distinct local_path, prediction_class from image_list where prediction_class = %s")
   cursor.execute(query, (searchWord,))
   
   print("Found following images for search term \"" + searchWord + "\"")
@@ -81,7 +90,7 @@ def queryStemmingsByTermAndPrintResults(connection, searchWord):
 # Query to find image-text matchings automatically
 def queryImagesAndMailsForSameStemmingWords(connection, function_prepareImagesForClassification):
   cursor = connection.cursor()
-  query = ("select distinct image_results.prediction_class, image_results.prediction_class_stemmed, image_results.local_path, email_list.email_from, email_list.email_to, email_list.email_subject, email_list.email_body from image_results, email_list, email_stemming where email_stemming.emailID = email_list.ID and email_stemming.stemming_word = image_results.prediction_class_stemmed")
+  query = ("select distinct image_list.prediction_class, image_stemming.stemming_word, image_list.local_path, email_list.email_from, email_list.email_to, email_list.email_subject, email_list.email_body from image_list, image_stemming, email_list, email_stemming where email_stemming.emailID = email_list.ID and image_stemming.imageID = image_list.ID and email_stemming.stemming_word = image_stemming.stemming_word")
   cursor.execute(query)
   print("Found following matches")
   
