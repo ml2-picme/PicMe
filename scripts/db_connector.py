@@ -22,6 +22,7 @@ def storeImageClassificationResultToDB(connection, localPath, model, predictedCl
     for stemmingWord in stemmingWords:
       add_stemming = ("insert ignore into image_stemming (imageID, stemming_word) values (%s, %s)")
       data_stemming = (int(resultId), stemmingWord)
+      cursor.execute(add_stemming, data_stemming)
       resultId2 = cursor.lastrowid
       connection.commit()
       print(resultId2, " | ", stemmingWord)
