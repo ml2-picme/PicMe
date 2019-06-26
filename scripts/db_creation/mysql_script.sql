@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS ml2.email_stemming (
     ID int PRIMARY KEY AUTO_INCREMENT,
     emailID int NOT NULL,
     stemming_word varchar(100) NOT NULL,
-    FOREIGN KEY (emailID) REFERENCES email_list(ID),
+    FOREIGN KEY (emailID) REFERENCES email_list(ID) ON DELETE CASCADE,
     CONSTRAINT c_email_stemming UNIQUE (emailID, stemming_word)
 );
 
@@ -36,6 +36,6 @@ CREATE TABLE IF NOT EXISTS ml2.image_stemming (
   ID int PRIMARY KEY AUTO_INCREMENT,
   imageID int NOT NULL,
   stemming_word varchar(100) NOT NULL,
-  FOREIGN KEY (imageID) REFERENCES image_list(ID),
+  FOREIGN KEY (imageID) REFERENCES image_list(ID) ON DELETE CASCADE,
   CONSTRAINT c_image_stemming UNIQUE (imageID, stemming_word)
 );
