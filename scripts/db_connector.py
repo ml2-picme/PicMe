@@ -54,12 +54,12 @@ def storeTextStemmingResultToDB(connection, emailPath, emailFrom, emailTo, email
 def queryImagesByTermAndPrintResults(connection, searchWord, function_prepareImagesForClassification):
   searchWord = "%" + searchWord + "%"
   cursor = connection.cursor()
-  query = ("select distinct local_path, prediction_class from image_list where prediction_class like %s")
+  query = ("select distinct local_path from image_list where prediction_class like %s")
   cursor.execute(query, (searchWord,))
   
   print("Found following images for search term \"" + searchWord + "\"")
   
-  for (local_path, prediction_class) in cursor:
+  for local_path in cursor:
     foundFiles = [open(local_path, 'rb')]
     preparedImage224x224 = function_prepareImagesForClassification(foundFiles, 224, 224)[0]
     plt.figure()
@@ -92,7 +92,8 @@ def queryStemmingsByTermAndPrintResults(connection, searchWord):
 # Query to find image-text matchings automatically
 def queryImagesAndMailsForSameStemmingWords(connection, function_prepareImagesForClassification):
   cursor = connection.cursor()
-  query = ("select distinct image_list.prediction_class, image_stemming.stemming_word, image_list.local_path, email_list.email_from, email_list.email_to, email_list.email_subject, email_list.email_body from image_list, image_stemming, email_list, email_stemming where email_stemming.emailID = email_list.ID and image_stemming.imageID = image_list.ID and email_stemming.stemming_word = image_stemming.stemming_word")
+  query = ("select distinct image_list.
+           , image_stemming.stemming_word, image_list.local_path, email_list.email_from, email_list.email_to, email_list.email_subject, email_list.email_body from image_list, image_stemming, email_list, email_stemming where email_stemming.emailID = email_list.ID and image_stemming.imageID = image_list.ID and email_stemming.stemming_word = image_stemming.stemming_word")
   cursor.execute(query)
   print("Found following matches")
   
