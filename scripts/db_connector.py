@@ -59,7 +59,7 @@ def queryImagesByTermAndPrintResults(connection, searchWord, function_prepareIma
   
   print("Found following images for search term \"" + searchWord + "\"")
   
-  for local_path in cursor:
+  for (local_path,) in cursor:
     foundFiles = [open(local_path, 'rb')]
     preparedImage224x224 = function_prepareImagesForClassification(foundFiles, 224, 224)[0]
     plt.figure()
