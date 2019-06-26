@@ -52,8 +52,9 @@ def storeTextStemmingResultToDB(connection, emailPath, emailFrom, emailTo, email
 
 # Query the image table for a specific search word
 def queryImagesByTermAndPrintResults(connection, searchWord, function_prepareImagesForClassification):
+  searchWord = "%" + searchWord + "%"
   cursor = connection.cursor()
-  query = ("select distinct local_path, prediction_class from image_list where prediction_class = %s")
+  query = ("select distinct local_path, prediction_class from image_list where prediction_class like %s")
   cursor.execute(query, (searchWord,))
   
   print("Found following images for search term \"" + searchWord + "\"")
